@@ -25,8 +25,6 @@ def sarsa_linear():
 
     for l in tqdm(l_ls):
         mse_ls = []
-        N_s_a = np.zeros((11, 22, 2))
-        N_s = np.zeros((11, 22))
         
         # Weights for linear func approx
         W_s = np.zeros((3, 6, 2))
@@ -45,7 +43,6 @@ def sarsa_linear():
                 # Not terminated
                 if new_s != (0, 0):
                     # Select new action
-                    N_s[new_s[0], new_s[1]] += 1
                     epsilon = 0.05
 
                     if np.random.rand() < epsilon:
@@ -58,9 +55,7 @@ def sarsa_linear():
                 else:
                     td_error = new_r - V_s_a_w
                 
-
                 
-                N_s_a[s[0], s[1], a] += 1
                 E_s_a[s[0], s[1], a] += 1
                 S_ls.append((s[0], s[1], a))
 
