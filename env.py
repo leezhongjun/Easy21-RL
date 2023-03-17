@@ -27,11 +27,8 @@ def step(state, action):
         # Player sticks
         # Dealer's turn
         dealer_value = state[0]
-        while dealer_value < 17:
+        while dealer_value >= 1 and dealer_value < 17:
            dealer_value += draw()
-           if dealer_value < 1:
-               reward = 1
-               return reward, (0, 0)
 
         if dealer_value > 21 or dealer_value < state[1] or dealer_value < 1:
             # Player wins
