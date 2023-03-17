@@ -13,7 +13,7 @@ For 10,000,000 episodes:
 To use: run `monte_carlo.py`
 
 ## Sarsa($\lambda$)
-$With \ parameter \ values \ λ ∈ {0, 0.1, 0.2, ..., 1}$
+$With \ parameter \ values \ λ ∈ \\{0, 0.1, 0.2, ..., 1\\}$
 
 For 10,000 episodes:
 
@@ -28,13 +28,13 @@ To use: run `sarsa.py`
 
 $Binary \ feature \ vector \ φ(s, a) \ with \ 3 ∗ 6 ∗ 2 = 36 \ features $
 
-$Dealer(s) = \{ [1, 4], [4, 7], [7, 10]\} $
+$Dealer(s) = \\{ {[1, 4], [4, 7], [7, 10]}\\} $
 
-$Player(s) = \{[1, 6], [4, 9], [7, 12], [10, 15], [13, 18], [16, 21]\} $
+$Player(s) = \\{[1, 6], [4, 9], [7, 12], [10, 15], [13, 18], [16, 21]\\} $
 
-$a = \{hit, stick\} $
+$a = \\{hit, stick\\} $
 
-$With \ parameter \ values \ λ ∈ \{0, 0.1, 0.2, ..., 1\} $
+$With \ parameter \ values \ λ ∈ \\{0, 0.1, 0.2, ..., 1\\} $
 
 For 10,000 episodes:
 
