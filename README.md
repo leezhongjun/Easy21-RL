@@ -6,7 +6,7 @@ This is my answer to the [Easy21 assignment](https://www.davidsilver.uk/wp-conte
 ## Monte Carlo Control
 $V^*(s) = max_a \ Q^{\ast}(s,a)$
 
-For 10,000,000 runs:
+For 10,000,000 episodes:
 
 ![monte-carlo](https://user-images.githubusercontent.com/80515759/225575928-74ad101c-44f3-4ec7-bf09-53396a6ca0c8.png)
 
